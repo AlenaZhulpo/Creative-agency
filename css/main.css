@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+        url('../fonts/montserrat-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'ioniconsmedium';
+    src: url('../fonts/ionicons-webfont.eot');
+    src: url('../fonts/ionicons-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ionicons-webfont.woff2') format('woff2'),
+        url('../fonts/ionicons-webfont.woff') format('woff'),
+        url('../fonts/ionicons-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/opensans-regular-webfont.woff') format('woff'),
+        url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-width: 1200px;
+    color: #60606e;
+    font: normal 14px/24px 'open_sansregular', 'Times New Roman', sans;
+}
+
+.fixed_width_container {
+    box-sizing: border-box;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background: url('../images/homepage_images/header_background.png') no-repeat center 0;
+    font-size: 16px;
+}
+
+header, header a {
+    color: #60606e;
+}
+
+header a{
+    text-transform: uppercase;
+    font: normal 18px/30px 'montserratbold', 'Times New Roman', sans;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: 'montserratbold', 'Times New Roman', sans;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: 80px; 
+}
+
+h2 {
+    font-size: 29px;
+    line-height: 48px; 
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.button {
+    text-transform: uppercase;
+}
+
+.information .title, .portfolio .title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Меню*/
+header .menu  {
+    padding-top: 36px;
+    padding-bottom: 159px;
+    overflow: hidden;
+}
+
+header .menu > a {
+    display: inline-block;
+    float: left;
+    max-width: 100px;
+}
+
+header .menu a:hover {
+    color: #7beec7;
+}
+
+header nav {
+    float: right;
+    max-height: 500px;
+}
+
+header nav li {
+    margin-left: 50px;
+}
+
+header nav li, nav li a  {
+    display: inline-block;
+}
+
+/*Logo*/
+header .logo {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 580px;
+}
+header .logo p:first-child {
+    display: inline-block;
+    line-height: 25px;
+    padding: 5px 18px 0 18px;
+    background: #7beec7;
+    text-transform: uppercase;
+    font: normal 18px/30px 'montserratbold', 'Times New Roman', sans;
+}
+
+header .logo h1 {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 35px;
+    border: 10px solid #60606e;
+    margin-bottom: 25px;
+}
+
+header .logo p:last-child {
+    margin-bottom: 120px;
+}
+
+/*History*/
+header .history {
+    overflow: hidden;
+    padding-bottom: 24px; 
+}
+
+header .history > img {
+    float: left;
+    max-width: 458px;
+}
+
+header .history > div {
+    margin-top: 18px;
+    width: 555px;
+    float: right;
+    overflow: hidden;
+}
+
+header .history > div h2 {
+    margin-bottom: 5px;
+    background: url('../images/homepage_images/rectangle1.jpg') no-repeat 1px 22px;
+}
+
+header .history p {
+    line-height: 30px;
+}
+
+header .history .button {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background: #7beec7;
+    float: right;
+    margin-top: 22px;
+    padding: 12px 36px 8px 37px;   
+}
+
+header .history .button:hover {
+    color: #7beec7;
+    background-color: #60606e;
+}
+
+/*Main*/
+.information h2 {
+    display: inline-block;
+    margin-top: 115px;
+    margin-bottom: 9px;
+    background: url('../images/homepage_images/rectangle1.jpg') no-repeat 3px 21px;
+}
+
+.information .title {
+    max-width: 750px;
+    font-size: 14px;
+    padding-bottom: 97px;
+}
+
+/*Why choose us*/
+.information .columns {
+    overflow: hidden;
+    padding-left: 2px;
+}
+
+.information .columns .col1 {
+    max-width: 265px;
+    float: left;
+    margin-right: 128px;
+}
+
+.information .columns .col2 {
+    max-width: 265px;
+    float: left;
+}
+
+.information .columns .col3 {
+    float: right;
+    max-width: 457px;
+}
+
+.information .columns .col3 > img {
+    max-width: 457px;
+}
+
+.information .columns ul li  {
+    padding-bottom: 6px;
+}
+
+.information .columns li a {
+    color: #999;
+    text-transform: uppercase;   
+}
+
+.information .columns li a:hover {
+    color: #60606e;
+} 
+
+.information .columns .col1, .information .columns .col2 {
+    padding-top: 18px;
+}
+
+.information .columns  h3 {
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+.information .columns .col1 .block1, .information .columns .col2 .block3 {
+    padding-bottom: 47px;
+}
+
+
+/*Portfolio*/
+.portfolio {
+    padding-top: 132px;
+}
+
+.portfolio .title {
+    width: 785px;
+    padding-bottom: 88px;
+}
+
+.portfolio .title h2 {
+    display: inline-block;
+    background: url('../images/homepage_images/rectangle1.jpg') no-repeat 18px 21px;
+    padding-left: 17px;
+    margin-bottom: 9px;
+}
+
+.portfolio .columns {
+    overflow: hidden;
+    padding-bottom: 120px;
+}
+
+.portfolio .col2, .portfolio .col3, .portfolio .col4 {
+    padding-top: 10px;
+}
+
+.portfolio .col1 {
+    float: left;
+    width: 263px;
+}
+
+.portfolio .col1 h2 {
+    margin-bottom: 32px;
+}
+
+.portfolio .col1 li{
+    padding-bottom: 17px;
+}
+
+
+.portfolio .col1 li a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'montserratbold', 'Times New Roman', sans;
+    color: #60606e;  
+    padding: 1px 20px 0;
+    line-height: 20px;
+}
+
+.portfolio .col1 li a:hover {
+    color: #fff;
+    background-color: #7beec7;
+}
+
+.portfolio .col2 img, .portfolio .col3 img, .portfolio .col4 img {
+    margin-bottom: 23px;
+}
+
+
+.portfolio .col2 {
+    float: left; 
+    width: 264px;
+    padding-left: 28px;
+}
+
+.portfolio .col2 > img {
+    max-width: 264px;
+}
+
+.portfolio .col3 {
+    float: left;
+    padding-left: 29px;
+    width: 264px;
+}
+
+.portfolio .col3 > img {
+    max-width: 264px;
+}
+
+.portfolio .col4 {
+    float: left;
+    padding-left: 30px;
+    width: 261px;
+}
+
+.portfolio .col4 > img {
+    max-width: 261px;
+}
+
+/*Subscription*/
+.subscription  {
+    background-color: #7beec7;
+}
+
+.subscription .columns {
+    overflow: hidden;
+    padding: 40px 0 51px;
+}
+
+.subscription .col1, .subscription .col2 {
+    width: 555px;
+}
+
+.subscription .col1 {
+    float: left;
+    color: #fff;
+}
+
+.subscription .col2 {
+    float: right;
+}
+
+.subscription .col1 a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'montserratbold', 'Times New Roman', sans;
+    color: #7beec7;
+    padding: 13px 30px;
+    margin-top: 14px;
+    margin-left: 1px;
+    background-color: #fff; 
+    box-sizing: border-box;
+}
+
+.subscription .col1 a:hover {
+    color: #fff;
+    background-color: #7beec7;
+    border: 3px solid #fff;
+    padding: 10px 27px;
+}
+
+.subscription .subscription_field {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 15px 20px 18px;
+    font-size: 16px;
+    color: #999;
+}
+.subscription .subscription_field h3, .subscription .subscription_field p {
+    padding-left: 5px;
+}
+
+.subscription .subscription_field h3{
+    font: normal 24px/35px 'montserratbold', 'Times New Roman', sans;
+    margin-bottom: 2px;
+    color: #60606e;
+}
+
+/*Input*/
+input.email {
+    width: 335px;
+    color: #60606e;
+    margin-top: 27px;
+    padding: 11px 19px 7px;
+    font: normal 12px/30px 'montserratbold', 'Times New Roman', sans;
+    border: 1px solid #cdcdcd;
+}
+
+input.email:focus {
+    border-color: #60606e;
+}
+
+input.email::placeholder {
+    color: #cdcdcd;
+    text-transform: uppercase;
+}
+
+input.submit {
+    margin-left: -4px;
+    width: 135px;
+    background-color: #7beec7;
+    color: #fff;
+    font: normal 14px/30px 'montserratbold', 'Times New Roman', sans;
+    margin-top: 27px;
+    padding:  12px 5px 8px;
+    border: none;
+}
+
+input.submit:hover {
+    color: #60606e;
+    padding:  11px 4px 7px;
+    border: 1px solid #60606e;
+}
+
+/*Footer*/
+footer .fixed_width_container {
+    padding-top: 44px;
+}
+
+footer .columns {
+    overflow: hidden;
+}
+
+footer .col1 {
+    float: left;
+    width: 555px;
+}
+
+footer .col2 {
+    float: right;
+    width: 555px;
+}
+
+footer .col1 li, footer .col1 li a {
+    display: inline-block;   
+}
+
+footer .col1 li {
+    color: #9a9a9a;
+    text-transform: uppercase;
+}
+
+footer .col1 li a {
+    padding: 0 21px 0 16px;
+    color: #9a9a9a;
+}
+
+footer .col1 li a:hover {
+    color: #60606e;
+}
+
+footer .col2 {
+    text-align: right;
+}
+
+footer .col2 p {
+    color: #9a9a9a;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+footer .col2 ul {
+    margin-top: 20px;
+    margin-right: 12px;
+    margin-bottom: 50px;
+}
+
+footer .col2 li, footer .col2 li a {
+    display: inline-block;
+}
+
+footer .col2 li {
+    margin-left: 13px; 
+}
+
+footer .col2 li a {
+    width: 20px;
+    height: 20px;
+}
+
+footer .col2 .facebook {
+    background: url('../images/homepage_images/icon_facebook1.png') no-repeat center 0;
+}
+
+footer .col2 .twitter {
+    background: url('../images/homepage_images/icon_twitter1.png') no-repeat center 0;
+}
+
+footer .col2 .youtube {
+    background: url('../images/homepage_images/icon_youtube1.png') no-repeat center 0;
+}
+
+footer .col2 .linkedin {
+    background: url('../images/homepage_images/icon_linkedin1.png') no-repeat center 0;
+}
+
+footer .col2 .pinterest {
+    background: url('../images/homepage_images/icon_pinterest1.png') no-repeat center 0;
+}
+
+footer .col2 .instagram {
+    background: url('../images/homepage_images/icon_instagram1.png') no-repeat center 0;
+}
+
+footer .col2 li a:hover {
+    background-position: center -20px;
+}
